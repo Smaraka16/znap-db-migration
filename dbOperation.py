@@ -8,11 +8,10 @@ from main import customError, loggingHandler
 import urllib.parse
 
 class DbSessionContextManager:
-    hostname = 'rwood.znapay.in'
-    password = "Rw00dzn@p@y"
+     
     encoded_password = urllib.parse.quote(password, safe="")
     DbEngine = "postgresql://postgres:8065@localhost:5432/znap_rwood_30_11_2023"
-    # DbEngine = f"postgresql://rwood_znapay:{encoded_password}@{hostname}:5432/rwoodapi_znapay"
+     
     
     def __init__(self):
         self.engine = create_engine(DbSessionContextManager.DbEngine)
