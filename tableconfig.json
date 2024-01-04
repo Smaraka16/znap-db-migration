@@ -1,0 +1,162 @@
+{
+    "tableModel": [
+        {
+            "model_name": "recordtype",
+            "file_path": "E:\\Rwood-Db-Migration\\model_files\\RecordType.csv",
+            "columns": {
+                "id": "Id",
+                "account_record": "Name"
+            }
+        },
+
+        {
+            "model_name": "account",
+            "file_path": "E:\\Rwood-Db-Migration\\model_files\\Account.csv",
+            "columns": {
+                "id": "Id",
+                "account_name": "Name",
+                "billing_street": "BillingStreet",
+                "account_alias": "Account_Alias__c",
+                "billing_city": "BillingCity",
+                "billing_country": "BillingCountry",
+                "shipping_street": "ShippingStreet",
+                "phone": "Phone",
+                "website": "Website",
+                "annual_coal_requirement_in_MT": "Annual_Coal_Requirement__c",
+                "record_id": "RecordTypeId"
+            },
+            "fk_val": {},
+            "code": {
+                "prefix": "RW-AC",
+                "field_name": "account_code"
+            }
+        },
+
+        {
+            "model_name": "contact",
+            "file_path": "E:\\Rwood-Db-Migration\\model_files\\Contact.csv",
+            "columns": {
+                "id": "Id",
+                "title": "Title",
+                "saluation": "Salutation",
+                "first_name": "FirstName",
+                "last_name": "LastName",
+                "contact_email": "Email",
+                "contact_mobile": "MobilePhone",
+                "lead_source": "LeadSource",
+                "mail_street": "MailingStreet",
+                "mail_postal_code": "MailingPostalCode",
+                "account_id": "AccountId"
+            },
+            "fk_val": {
+                "account": [
+                    {
+                        "fk_field": "account_name",
+                        "conditional_field": "account_id",
+                        "parent_table": "account"
+                    }
+                ]
+            },
+            "code": {
+                "prefix": "RW-CONTACT",
+                "field_name": "contact_code"
+            }
+        },
+
+        {
+            "model_name": "rwoodcompany",
+            "file_path": "D:\\rwood_znap_development\\rwood_db_data_csv\\Company__c.csv",
+            "columns": {
+                "id": "Id",
+                "rwood_company_code": "Name",
+                "address_1": "Address1__c",
+                "address_2": "Address2__c",
+                "country": "Country__c",
+                "company_name": "Company_Name__c",
+                "pincode": "Pincode__c"
+            },
+            "fk_val": {
+                "users": [
+                    {
+                        "fk_field": "owner",
+                        "conditional_field": "user_id",
+                        "parent_table": "users"
+                    }
+                ]
+            }
+        },
+
+        {
+            "model_name": "rwoodusers",
+            "file_path": "D:\\rwood_znap_development\\rwood_db_data_csv\\Rwood_User__c.csv",
+            "columns": {
+                "id": "Id",
+                "rwood_username": "Name",
+                "active": "Active__c",
+                "rwood_user_type": "Rwood_User_Type__c"
+            },
+            "fk_val": {},
+            "code": {
+                "prefix": "RW-USER",
+                "field_name": "rwood_user_code"
+            }
+        },
+        
+        {
+            "model_name": "contract",
+            "file_path": "D:\\rwood_znap_development\\rwood_db_data_csv\\Contract.csv",
+            "columns": {
+                "id": "Id",
+                "account_id": "AccountId",
+                "contract_status": "Contract_Status__c",
+                "applicable_law": "Applicable_Law__c",
+                "arbitration": "Arbitration__c",
+                "contract_quantity_in_MT": "Contract_Quantity_MT__c",
+                "commodity": "Commodity__c",
+                "price_basis": "Price_Basis__c",
+                "price_PMT_in_words": "Price_PMT__c",
+                "rejections": "Rejections__c",
+                "contract_start_date": "StartDate",
+                "billing_street": "BillingStreet",
+                "billing_zip_postal_code": "BillingPostalCode",
+                "billing_address": "BillingCountry",
+                "rwood_contract_no": "ContractNumber",
+                "rwood_company_id":"Company__c",
+                "rwood_user_id": "Trader_Name__c"
+            }
+        },
+        {
+            "model_name": "contractshipment",
+            "file_path": "D:\\rwood_znap_development\\rwood_db_data_csv\\Contract_Shipments__c.csv",
+            "columns": {
+                "id": "Id",
+                "contract_id": "Contract__c",
+                "record_type": "RecordTypeId",
+                "contract_shipment_status": "Contract_Shipment_Status__c",
+                "price_type": "Price_Type__c",
+                "laycan_month_from": "Laycan_Month_From__c",
+                "laycan_month_to": "Laycan_Month_To__c",
+                "laycan_year_from": "Laycan_Year_From__c",
+                "laycan_year_to": "Laycan_Year_To__c",
+                "tcf_count": "No_of_TCF__c",
+                "quantity": "Quantity__c"
+            }
+        },
+        {
+            "model_name": "opportunity",
+            "file_path": "D:\\rwood_znap_development\\rwood_db_data_csv\\Opportunity.csv",
+            "columns": {
+                "id": "Id",
+                "contract_id": "ContractId",
+                "applicable_law": "Applicable_Law__c",
+                "opportunity_name": "Name",
+                "close_date": "CloseDate",
+                "opportunity_no": "Opportunity_No__c",
+                "laycan_month": "Laycan_Month__c",
+                "laycan_year": "Laycan_Year__c",
+                "account_id": "AccountId",
+                "currency": "Currency__c"
+            }
+        }
+    ]
+}

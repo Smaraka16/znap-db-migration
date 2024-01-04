@@ -1,0 +1,44 @@
+2024-01-04 21:04:54,894 - INFO - [+] File Initialisation Started: RecordType.csv
+2024-01-04 21:04:54,920 - INFO - Success: Data Frame Retrived From- RecordType.csv
+2024-01-04 21:04:54,922 - INFO - [+] Database Initialization Started
+2024-01-04 21:04:56,763 - INFO - [+] Database Connected Successfully
+2024-01-04 21:04:56,787 - INFO - [+] Migration Initalized For : recordtype
+2024-01-04 21:04:57,195 - INFO - [+] Migration Successfull : recordtype
+2024-01-04 21:04:57,196 - INFO - [+] Database Connection Closed Successfully
+2024-01-04 21:04:57,198 - INFO - [+] File Initialisation Started: Account.csv
+2024-01-04 21:04:57,232 - INFO - Success: Data Frame Retrived From- Account.csv
+2024-01-04 21:04:57,232 - INFO - [+] Database Initialization Started
+2024-01-04 21:04:58,649 - INFO - [+] Database Connected Successfully
+2024-01-04 21:04:58,649 - INFO - [+] Migration Initalized For : account
+2024-01-04 21:05:00,314 - INFO - [+] Migration Successfull : account
+2024-01-04 21:05:00,314 - INFO - [+] Database Connection Closed Successfully
+2024-01-04 21:05:00,314 - INFO - [+] File Initialisation Started: Contact.csv
+2024-01-04 21:05:00,325 - INFO - Success: Data Frame Retrived From- Contact.csv
+2024-01-04 21:05:00,325 - INFO - [+] Database Initialization Started
+2024-01-04 21:05:01,659 - INFO - [+] Database Connected Successfully
+2024-01-04 21:05:01,659 - INFO - [+] Migration Initalized For : contact
+2024-01-04 21:05:02,103 - INFO - [+] Database Connection Closed Successfully
+2024-01-04 21:05:02,103 - ERROR - [-] An unexpected Database Error Occurred: Unconsumed column names: account_code
+2024-01-04 21:05:02,113 - INFO - [+] Database Migration Completed at - 2024-01-04 21:04:53
+2024-01-04 21:05:56,360 - INFO - [+] File Initialisation Started: RecordType.csv
+2024-01-04 21:05:56,360 - INFO - Success: Data Frame Retrived From- RecordType.csv
+2024-01-04 21:05:56,360 - INFO - [+] Database Initialization Started
+2024-01-04 21:05:57,331 - INFO - [+] Database Connected Successfully
+2024-01-04 21:05:57,331 - INFO - [+] Migration Initalized For : recordtype
+2024-01-04 21:05:57,538 - INFO - [+] Migration Successfull : recordtype
+2024-01-04 21:05:57,538 - INFO - [+] Database Connection Closed Successfully
+2024-01-04 21:05:57,538 - INFO - [+] File Initialisation Started: Account.csv
+2024-01-04 21:05:57,570 - INFO - Success: Data Frame Retrived From- Account.csv
+2024-01-04 21:05:57,570 - INFO - [+] Database Initialization Started
+2024-01-04 21:05:58,533 - INFO - [+] Database Connected Successfully
+2024-01-04 21:05:58,533 - INFO - [+] Migration Initalized For : account
+2024-01-04 21:06:00,206 - INFO - [+] Migration Successfull : account
+2024-01-04 21:06:00,206 - INFO - [+] Database Connection Closed Successfully
+2024-01-04 21:06:00,206 - INFO - [+] File Initialisation Started: Contact.csv
+2024-01-04 21:06:00,222 - INFO - Success: Data Frame Retrived From- Contact.csv
+2024-01-04 21:06:00,222 - INFO - [+] Database Initialization Started
+2024-01-04 21:06:01,436 - INFO - [+] Database Connected Successfully
+2024-01-04 21:06:01,436 - INFO - [+] Migration Initalized For : contact
+2024-01-04 21:06:01,888 - INFO - [+] Database Connection Closed Successfully
+2024-01-04 21:06:01,888 - ERROR - [-] An unexpected Database Error Occurred: Unconsumed column names: account_code
+2024-01-04 21:06:01,888 - INFO - [+] Database Migration Completed at - 2024-01-04 21:05:55
